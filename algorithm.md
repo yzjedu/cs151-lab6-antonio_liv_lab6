@@ -64,4 +64,13 @@ Return:
            - `V - View Balance`
            - `E - Exit`
        2. Prompt the user to input their choice and convert it to uppercase.
-    1. if user enters 
+    1. if user enters 'D':
+       2. Call deposit()
+    1. elif user enters 'W':
+       2. Call withdraw()
+    1. elif user enters 'V':
+       2. Call view_balance:
+    1. elif user enters 'E':
+       2. Call exit():
+    1. else:
+       2. Call error_checking():
