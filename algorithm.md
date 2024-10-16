@@ -8,15 +8,15 @@
     - `SENTINEL = 'E'` (to exit the loop)
     - `choice = ''` (to store user’s menu choice)
 
-Name: view_balance
-Parameter:
-Return:
+- Name: view_balance
+- Parameter: none
+- Return: current balance
 3. Define function view_balance():
    1. Output current_balance to user.
 
-Name: deposit 
-Parameter:
-Return:
+- Name: deposit 
+- Parameter: how much money is being deposited
+- Return: updated balance
 4. Define function deposit():
     1. Prompt the user to enter the amount to deposit.
        2. Check if the deposit amount is a valid positive integer:
@@ -26,9 +26,9 @@ Return:
        3. otherwise:
              1. Output an error message requesting a valid positive number.
 
-Name: withdraw
-Parameter:
-Return:
+- Name: withdraw
+- Parameter: how much money is being withdrawn
+- Return: updated balance
 5. Define function withdraw():
    1. Prompt the user to enter the amount to withdraw.
        2. Check if the withdrawal amount is a valid positive integer:
@@ -41,21 +41,21 @@ Return:
              1. Output an error message requesting a valid positive number.
 
 
-Name: exit
-Parameter:
-Return:
+- Name: exit
+- Parameter: none
+- Return: exit message
 6. Define function exit(): 
     1. Output a message thanking the user and indicate the program is ending.
 
-Name: error_checking
-Parameter:
-Return:
+- Name: error_checking
+- Parameter: none
+- Return: error message
 7. Define function error_checking():
    1. Output an error message requesting a valid option (D, W, V, or E).
 
-Name: main
-Parameter:
-Return: 
+- Name: main
+- Parameter: none
+- Return: none
 8. Define function main():
     1. Start a while loop that continues until the user enters 'E' to exit:
        1. Display the menu options:
