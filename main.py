@@ -1,4 +1,11 @@
-import math
+#Liv Oakes and Antonio
+#Dr. Yalew
+#CS151
+#10/23/24
+#Lab 6
+#Purpose: Create an atm program where the user can enter D: deposit, W: Withdraw, V: View balance, E: Exit
+#         and the program will do as prompted and output the updated balance.
+
 initial_balance = 1000
 current_balance = initial_balance
 sentinel = 'E'.lower()
