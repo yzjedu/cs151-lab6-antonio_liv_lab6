@@ -5,73 +5,61 @@
 #Lab 6
 #Purpose: Create an atm program where the user can enter D: deposit, W: Withdraw, V: View balance, E: Exit
 #         and the program will do as prompted and output the updated balance.
-from lab5_code_sol import deposit_amount, withdraw_amount
 
-current_balance = 1000
-sentinel = 'E'.lower()
-choice = ''
-deposit_amount = 0
-withdraw_amount = 0
+INITIAL_BALANCE = 1000
+SENTINEL = 'E'
 
+def menu():
+    print("\nPlease select an option:"
+          "\n\t D - Deposit"
+          "\n\t W - Withdraw"
+          "\n\t V - View Balance"
+          "\n\t E - Exit")
 
-#deposit function
-def deposit(current_balance):
-    if deposit_amount > 0:
-         current_balance += deposit_amount
-         print(f'Your balance is {current_balance} dollars.')
+def deposit(balance):
+    amount = input_amount()
+    return balance + amount
+
+def withdraw(balance):
+    amount = input_amount()
+    result = balance - amount
+    if result < 0:
+        print('Your balance is negative')
+    return result
+
+def input_amount():
+    amount = input('Enter the amount: ')
+    if not amount.isdigit() or int(amount) < 0:
+        return 0
     else:
-        input('Please enter a positive amount.')
-
-#withdraw function
-def withdraw(current_balance):
-    if withdraw_amount > 0:
-           current_balance -= withdraw_amount
-           print(f'Your balance is {current_balance} dollars.')
-    if current_balance <= 0:
-            print('Your balance is negative, you will be charged 5 % interest')
-    else:
-           input('Please enter a positive amount.')
+        return int(amount)
 
 #view balance function
-def view_balance(current_balance):
-    print(current_balance)
+def view_balance(balance):
+    print(f'Your current balance is {balance:.2f}')
 
-#exit function
-def exit():
-    print('Thank you!')
-
-
-#error check function
-def error():
-    choice = input('Please enter:  D: deposit, W: Withdraw, V: View balance, E: Exit: ')
-
-def error_int(amount):
-    choice = input('Please enter a positive amount: ')
 #main function
 def main():
-        while True:
-            print('\nD - Deposit \nW - Withdraw \nV - View balance \nE - Exit ')
-            choice = input('Please select an option: ').lower()
-            if choice == 'd' or choice == 'deposit':
-                deposit_amount = int(input('Enter amount to deposit: '))
-                if deposit_amount > 0:
-                    deposit(current_balance)
-                else:
-                    error_int(deposit_amount)
-            elif choice == 'w' or choice == 'withdraw':
-                withdraw_amount = int(input('Enter amount to withdraw: '))
-                if withdraw_amount > 0:
-                    withdraw(current_balance)
-                else:
-                    error_int(withdraw_amount)
-                withdraw(current_balance)
-            elif choice == 'v' or choice == 'view balance':
-                view_balance(current_balance)
-            elif choice == 'e' or choice == 'exit':
-                exit()
-                break
-            else:
-                error()
+
+    current_balance = INITIAL_BALANCE
+    choice = ''
+
+    while choice != SENTINEL:
+
+        menu()
+        choice = input('Enter your choice: ').upper().strip()
+
+        if choice == 'D':
+            current_balance = deposit(current_balance)
+        elif choice == 'W':
+            current_balance = withdraw(current_balance)
+        elif choice == 'V':
+            view_balance(current_balance)
+        elif choice == 'E':
+            exit(0)
+        else:
+            print('Invalid choice')
+
 main()
 
 
