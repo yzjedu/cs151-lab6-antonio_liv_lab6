@@ -1,46 +1,47 @@
-# Reflection Document
+ENCRYPTED:
+# Qdekdbshnm Cnbtldms
 
-* Drive Full Name  : Antonio Dueno
-* Partner Full Name: Liv Oakes
-* Student ID: 1906253
+* Cqhud Etkk Mzld  : Zmsnmhn Ctdmn
+* Ozqsmdq Etkk Mzld: Khu Nzjdr
+* Rstcdms HC: 1906253
 
-### Objective
-#### What were you supposed to learn/accomplish?
-In this lab we were meant to rewrite the code for lab 5 and make it include functions.
+### Naidbshud
+#### Vgzs vdqd xnt rtoonrdc sn kdzqm/zbbnlokhrg?
+Hm sghr kza vd vdqd ldzms sn qdvqhsd sgd bncd enq kza 5 zmc lzjd hs hmbktcd etmbshnmr.
 
-### Procedure
-#### What steps were followed and what techniques did you use to solve the problem?
-1. First we created an algorithm so we could visualize how we wanted to rewrite the code for the ATM simulator.
-2. We used the pre-existing test cases to see what the expected results of the program were.
-3. We wrote the new code for the program, and debugged it until the program functioned as intended. 
+### Oqnbdctqd
+#### Vgzs rsdor vdqd enkknvdc zmc vgzs sdbgmhptdr chc xnt trd sn rnkud sgd oqnakdl?
+1. Ehqrs vd bqdzsdc zm zkfnqhsgl rn vd bntkc uhrtzkhyd gnv vd vzmsdc sn qdvqhsd sgd bncd enq sgd ZSL rhltkzsnq.
+2. Vd trdc sgd oqd-dwhrshmf sdrs bzrdr sn rdd vgzs sgd dwodbsdc qdrtksr ne sgd oqnfqzl vdqd.
+3. Vd vqnsd sgd mdv bncd enq sgd oqnfqzl, zmc cdatffdc hs tmshk sgd oqnfqzl etmbshnmdc zr hmsdmcdc. 
 
-#### What were the key concepts explored?
-In this lab, we explored the usage of functions in a program, and learned how to define and call functions.
+#### Vgzs vdqd sgd jdx bnmbdosr dwoknqdc?
+Hm sghr kza, vd dwoknqdc sgd trzfd ne etmbshnmr hm z oqnfqzl, zmc kdzqmdc gnv sn cdehmd zmc bzkk etmbshnmr.
 
-#### Did your results match what you expected to get?
-The results of the program were identical to the results of the lab 5 code, so yes.
+#### Chc xntq qdrtksr lzsbg vgzs xnt dwodbsdc sn fds?
+Sgd qdrtksr ne sgd oqnfqzl vdqd hcdmshbzk sn sgd qdrtksr ne sgd kza 5 bncd, rn xdr.
 
-#### Did you try using various test cases, or extreme test cases?
-We utilized the pre-existing test cases.
+#### Chc xnt sqx trhmf uzqhntr sdrs bzrdr, nq dwsqdld sdrs bzrdr?
+Vd tshkhydc sgd oqd-dwhrshmf sdrs bzrdr.
 
-### Reflection
-#### What challenge did you encounter?
-Making sure that the functions were being called correctly was difficult.
+### Qdekdbshnm
+#### Vgzs bgzkkdmfd chc xnt dmbntmsdq?
+Lzjhmf rtqd sgzs sgd etmbshnmr vdqd adhmf bzkkdc bnqqdbskx vzr cheehbtks.
 
-#### How did you follow the first 3 rules of programming?
-We created the algorithm before we began writing the code, we made sure the program was readable by a human by 
-including comments and clear variables, and we practiced before coding with our experience with the prompt in lab 5.
+#### Gnv chc xnt enkknv sgd ehqrs 3 qtkdr ne oqnfqzllhmf?
+Vd bqdzsdc sgd zkfnqhsgl adenqd vd adfzm vqhshmf sgd bncd, vd lzcd rtqd sgd oqnfqzl vzr qdzczakd ax z gtlzm ax 
+hmbktchmf bnlldmsr zmc bkdzq uzqhzakdr, zmc vd oqzbshbdc adenqd bnchmf vhsg ntq dwodqhdmbd vhsg sgd oqnlos hm kza 5.
 
-#### Did you overcome them and how?
-We overcame the challenges via trial and error. Eventually we were able to figure out that the functions weren't being called
-correctly due to an issue with how we wrote out the code.
+#### Chc xnt nudqbnld sgdl zmc gnv?
+Vd nudqbzld sgd bgzkkdmfdr uhz sqhzk zmc dqqnq. Dudmstzkkx vd vdqd zakd sn ehftqd nts sgzs sgd etmbshnmr vdqdm's adhmf bzkkdc
+bnqqdbskx ctd sn zm hrrtd vhsg gnv vd vqnsd nts sgd bncd.
 
-#### Any Key takeaways?
-Definitely seek more practice with functions for future labs or PAs.
+#### Zmx Jdx szjdzvzxr?
+Cdehmhsdkx rddj lnqd oqzbshbd vhsg etmbshnmr enq etstqd kzar nq OZr.
 
-#### Do you think you learned what you were supposed to learn for this lab?
-I think I gained valuable experience working with functions in this lab.
+#### Cn xnt sghmj xnt kdzqmdc vgzs xnt vdqd rtoonrdc sn kdzqm enq sghr kza?
+H sghmj H fzhmdc uzktzakd dwodqhdmbd vnqjhmf vhsg etmbshnmr hm sghr kza.
 
-#### What was it like working with your partner?
-Working with Liz went well. She was very helpful when writing the algorithm and code, and was very receptive when discussing the lab. 
+#### Vgzs vzr hs khjd vnqjhmf vhsg xntq ozqsmdq?
+Vnqjhmf vhsg Khy vdms vdkk. Rgd vzr udqx gdkoetk vgdm vqhshmf sgd zkfnqhsgl zmc bncd, zmc vzr udqx qdbdoshud vgdm chrbtrrhmf sgd kza. 
 
