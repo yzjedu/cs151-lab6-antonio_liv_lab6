@@ -5,15 +5,17 @@
 #Lab 6
 #Purpose: Create an atm program where the user can enter D: deposit, W: Withdraw, V: View balance, E: Exit
 #         and the program will do as prompted and output the updated balance.
+from lab5_code_sol import deposit_amount, withdraw_amount
 
-initial_balance = 1000
-current_balance = initial_balance
+current_balance = 1000
 sentinel = 'E'.lower()
 choice = ''
+deposit_amount = 0
+withdraw_amount = 0
+
 
 #deposit function
 def deposit(current_balance):
-    deposit_amount = int(input('Enter amount to deposit: '))
     if deposit_amount > 0:
          current_balance += deposit_amount
          print(f'Your balance is {current_balance} dollars.')
@@ -22,11 +24,10 @@ def deposit(current_balance):
 
 #withdraw function
 def withdraw(current_balance):
-    withdraw_amount = int(input('Enter amount to withdraw: '))
     if withdraw_amount > 0:
            current_balance -= withdraw_amount
            print(f'Your balance is {current_balance} dollars.')
-    elif current_balance < 0:
+    if current_balance <= 0:
             print('Your balance is negative, you will be charged 5 % interest')
     else:
            input('Please enter a positive amount.')
@@ -39,18 +40,30 @@ def view_balance(current_balance):
 def exit():
     print('Thank you!')
 
+
 #error check function
 def error():
     choice = input('Please enter:  D: deposit, W: Withdraw, V: View balance, E: Exit: ')
 
+def error_int(amount):
+    choice = input('Please enter a positive amount: ')
 #main function
 def main():
         while True:
             print('\nD - Deposit \nW - Withdraw \nV - View balance \nE - Exit ')
             choice = input('Please select an option: ').lower()
             if choice == 'd' or choice == 'deposit':
-                deposit(current_balance)
+                deposit_amount = int(input('Enter amount to deposit: '))
+                if deposit_amount > 0:
+                    deposit(current_balance)
+                else:
+                    error_int(deposit_amount)
             elif choice == 'w' or choice == 'withdraw':
+                withdraw_amount = int(input('Enter amount to withdraw: '))
+                if withdraw_amount > 0:
+                    withdraw(current_balance)
+                else:
+                    error_int(withdraw_amount)
                 withdraw(current_balance)
             elif choice == 'v' or choice == 'view balance':
                 view_balance(current_balance)

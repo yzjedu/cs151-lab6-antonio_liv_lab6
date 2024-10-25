@@ -55,8 +55,8 @@
 - Algorithm: 
   1. Output an error message requesting a valid option (D, W, V, or E). 
 
-- Purpose: Check for errors in float 
-- Name: error checking float 
+- Purpose: Check for errors in integer 
+- Name: error checking integers 
 - Parameter: none
 - Return: error message
 - Algorithm: 
@@ -79,13 +79,13 @@
        2. if user input is valid number and is valid positive number:
           1. Call deposit()
        2. else: 
-          3. Call error checking float
+          3. Call error checking integer
     1. elif user enters 'W':
        2. ask user to input how much they wish to deposit
        3. if user input is valid number and is valid positive number:
            2. Call withdraw()
        3. else 
-          4. call error checking float
+          4. call error checking integer
     1. elif user enters 'V':
        2. Call view_balance:
     1. elif user enters 'E':
