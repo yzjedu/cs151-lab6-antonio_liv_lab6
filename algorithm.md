@@ -1,94 +1,76 @@
 # Algorithm Document
 
-1. Output a welcome message explaining the purpose of the program.
+1. initialize variables the following variables:
+   1. Initial balance equals 1000
+   2. SENTINEL equals 'E'
+   3. current balance equals initial balance
+   4. choice equals ' '
+2. create while loop for while choice does not equal SENTINEL:
+   1. via the menu function, output to user the different kinds of options they have in the program, which are 
+      to view balance, deposit, withdraw or exit. 
+   2. ask user to input if they want to view balance, deposit, withdraw or exit
+   3. if user entered D:
+      1. ask user to input how much they wish to deposit.
+      2. call the deposit function, and have the amount user wanted to deposit added to current balance 
+   4. if user entered W:
+      1. ask user to input how much they wish to withdraw
+      2. call the withdraw function, and have the amount user wanted to withdraw subtracted to current balance
+      3. if current balance is less than 0:
+         1. output to user that their account balance is negative
+   5. if user entered V:
+      1. output the current balance to the user
+   6. if user entered E:
+      1. break the loop, and exit the program
+   7. else:
+      1. output to user that their input was invalid
 
-2. Initialize variables:
-    - `INITIAL_BALANCE = 1000`
-    - `current_balance = INITIAL_BALANCE`
-    - `SENTINEL = 'E'` (to exit the loop)
-    - `choice = ''` (to store user’s menu choice)
 
-- Purpose
-- Name: view_balance
-- Parameter: none
-- Return: current balance
-- Algorithm:
-  1. Output current_balance to user.
 
-- Purpose: 
-- Name: deposit 
-- Parameter: how much money is being deposited
-- Return: updated balance
-- Algorithm:
-    2. Check if the deposit amount is a valid positive integer:
-        1. Convert the input to an integer.
-        1. If the amount is positive, add it to `current_balance`.
-        1. Display the new balance to the user.
-       
-
-- Purpose: calculate withdrawal of funds 
-- Name: withdraw
-- Parameter: how much money is being withdrawn
-- Return: updated balance
-- Algorithm:
-   1. Prompt the user to enter the amount to withdraw.
-       2. Check if the withdrawal amount is a valid positive integer:
-            1. Convert the input to an integer.
-            1. If the amount is positive, subtract it from `current_balance`.
-            1. Display the new balance to the user.
-            1. If the `current_balance` becomes negative:
-                 1.  Output a warning message indicating that the user will be charged 5% interest.
-          3. otherwise:
-             1. Output an error message requesting a valid positive number.
-
-- Purpose:
-- Name: exit
-- Parameter: none
-- Return: exit message
-- Algorithm:
-    1. Output a message thanking the user and indicate the program is ending.
-
-- Purpose: Check for errors in string 
-- Name: error checking string 
-- Parameter: none
-- Return: error message
-- Algorithm: 
-  1. Output an error message requesting a valid option (D, W, V, or E). 
-
-- Purpose: Check for errors in integer 
-- Name: error checking integers 
-- Parameter: none
-- Return: error message
-- Algorithm: 
-  1. Output an error message requesting a valid input.
-
-- Purpose: main function
-- Name: main
+- Purpose: output to user the different options they have
+- Name: menu
 - Parameter: none
 - Return: none
 - Algorithm:
-    1. Start a while loop that continues until the user enters 'E' to exit:
-       1. Display the menu options:
-           - `D - Deposit`
-           - `W - Withdraw`
-           - `V - View Balance`
-           - `E - Exit`
-       2. Prompt the user to input their choice and convert it to uppercase.
-    1. if user enters 'D':
-       1. Ask user to input how much they wish to deposit
-       2. if user input is valid number and is valid positive number:
-          1. Call deposit()
-       2. else: 
-          3. Call error checking integer
-    1. elif user enters 'W':
-       2. ask user to input how much they wish to deposit
-       3. if user input is valid number and is valid positive number:
-           2. Call withdraw()
-       3. else 
-          4. call error checking integer
-    1. elif user enters 'V':
-       2. Call view_balance:
-    1. elif user enters 'E':
-       2. Call exit():
-    1. else:
-       2. Call error_checking():
+1. output to user list of options they have in the program. options include depositing, withdrawal, viewing balance, and exiting.
+
+- Purpose: ask user to enter the amount they with to either deposit or withdraw
+- Name: input amount
+- Parameter: none
+- Return: integer value of how much user wants to deposit or withdraw
+- Algorithm:
+1. ask user to input how much they wish to deposit or withdraw
+2. if user input is not digits or is less than 0:
+   1. return 0
+3. else:
+   1. return amount user inputted and typecast to integer
+
+- Purpose: calculate addition of value user entered of how much they wish to deposit
+- Name: deposit
+- Parameter: balance
+- Return: updated current balance with amount deposited added
+- Algorithm:
+1. equal amount to input amount
+2. add amount to balance and return result
+
+- Purpose: calculate subtraction of value user entered of how much they wish to withdraw
+- Name: withdraw
+- Parameter: balance
+- Return: updated current balance with amount withdrawn subtracted
+- Algorithm: 
+1. equal amount to input amount
+2. subtract amount to balance and equal result to variable named 'result' 
+3. if result is less than 0:
+   1. output to user that amount balance is negative
+4. return result
+
+- Purpose: allow user to view their balance
+- Name: view balance
+- Parameter: balance
+- Return: none
+- Algorithm: 
+1. output current balance to user
+
+
+
+   
+
