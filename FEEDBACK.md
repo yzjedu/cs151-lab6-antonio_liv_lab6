@@ -61,9 +61,7 @@
 |**YES-** | Algorithm      |
 
 ### Comments on the grading
-- current_balance and choice are initialized at main
-- There is no exit function in the code
-- The code has input amount function. It is not error checking function, so it does not match with the algorithm. 
+- The main function algorithm is till not the same as the code
 ### Grade: M
 
 ### Participation Grade: S
