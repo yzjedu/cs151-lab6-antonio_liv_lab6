@@ -17,18 +17,18 @@ def menu():
           "\n\t E - Exit")
 
 def deposit(balance):
-    amount = input_amount()
+    amount = input_amount('Enter the deposit amount: ')
     return balance + amount
 
 def withdraw(balance):
-    amount = input_amount()
+    amount = input_amount('Enter the withdraw amount: ')
     result = balance - amount
     if result < 0:
         print('Your balance is negative')
     return result
 
-def input_amount():
-    amount = input('Enter the amount: ')
+def input_amount(prompt):
+    amount = input(prompt)
     if not amount.isdigit() or int(amount) < 0:
         return 0
     else:
